@@ -1,0 +1,96 @@
+.profile-box {
+    width: 480px;
+    height: 800px;
+    margin: 20px auto;
+
+    box-shadow: 0px 0px 3px 0px;
+    position: relative;
+}
+
+.upper-side {
+    background-image: url('https://images.chosun.com/resizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.lower-side {
+    background-color: white;
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.lower-side > h3 {
+    margin-top: 40px
+}
+
+.text-box {
+    width: 380px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    white-space: normal;
+    text-align: center;
+    color: black;
+    font-family: Broadway;
+    font-size: 14pt;
+}
+
+.text-box > hr {
+    width: 30px;
+    color: darkgrey;
+}
+
+.menu {
+    width: 350px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chat-my-self {
+    width: 40px;
+    height: 40px;
+}
+
+.profile-edit {
+    width: 40px;
+    height: 40px;
+}
+
+.kakao-story {
+    width: 40px;
+    height: 40px;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 120px;
+    height: 120px;
+    border-radius: 70px;
+    overflow: hidden;
+    object-fit: cover;
+
+    position: absolute;
+    top: 440px;
+    left: 180px;
+}
