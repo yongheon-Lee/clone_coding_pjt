@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>클론코딩 프로젝트1-카톡 프로필</title>
+    <style>
+        .profile-box {
+            width: 480px;
+            height: 800px;
+            margin: 20px auto;
+
+            box-shadow: 0px 0px 3px 0px;
+            position: relative;
+        }
+        .upper-side {
+            background-image: url('https://images.chosun.com/resizer/5RWpufchdlBjPzWIZnKrDum_yl0=/600x399/smart/cloudfront-ap-northeast-1.images.arcpublishing.com/chosun/WO4SKPUA62ESBOT2QY7QB5XTAI.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .lower-side {
+            background-color: white;
+            height: 300px;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .lower-side > h3 {
+            margin-top: 40px
+        }
+        .text-box {
+            width: 380px;
+            margin: auto;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            white-space: normal;
+            text-align: center;
+            color: black;
+            font-family: Broadway;
+            font-size: 14pt;
+        }
+        .text-box > hr {
+            width: 30px;
+            color: darkgrey;
+        }
+        .menu {
+            width: 350px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .chat-my-self {
+            width: 40px;
+            height: 40px;
+        }
+        .profile-edit {
+            width: 40px;
+            height: 40px;
+        }
+        .kakao-story {
+            width: 40px;
+            height: 40px;
+        }
+        .menu-item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 70px;
+            overflow: hidden;
+            object-fit: cover;
+
+            position: absolute;
+            top: 440px;
+            left: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-box">
+        <div class="upper-side">
+            <div class="text-box">
+                <hr>
+                <p>안녕하세요. 저는 여러분의 귀여운 핑구예요. 기후위기 때문에 삶의 터전을 잃고 있어요ㅠㅠ
+                    제발 저희가 살 수 있게 환경을 생각해 주세요!</p>
+            </div>
+        </div>
+        <img class="profile-img" src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
+        <div class="lower-side">
+            <h3>핑구</h3>
+            <div class="menu">
+                <div class="menu-item">
+                    <img class="chat-my-self" src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa1e986b0-d5ab-4e8c-b328-3e3778f3077e%2F%E1%84%82%E1%85%A1%E1%84%8B%E1%85%AA%E1%84%8B%E1%85%B4_%E1%84%8E%E1%85%A2%E1%84%90%E1%85%B5%E1%86%BC.png?table=block&id=4a6c975c-1560-46fe-9b0e-ab9316f06cc1&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=240&userId=&cache=v2">
+                    <p>나와의 채팅</p>
+                </div>
+                <div class="menu-item">
+                    <img class="profile-edit" src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb5528682-60d4-423e-94c9-df051a14ff65%2F%E1%84%8F%E1%85%A1%E1%84%89%E1%85%B3.png?table=block&id=6497fccb-8352-448f-86b0-c61e8b26ff29&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=240&userId=&cache=v2">
+                    <p>프로필 관리</p>
+                </div>
+                <div class="menu-item">
+                    <img class="kakao-story" src="https://teamsparta.notion.site/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3f47f9b4-ddb6-4273-b844-89ce402ecdbe%2F%E1%84%91%E1%85%B3%E1%84%85%E1%85%A9%E1%84%91%E1%85%B5%E1%86%AF%E1%84%80%E1%85%AA%E1%86%AB%E1%84%85%E1%85%B5.png?table=block&id=0846c90b-1d2e-452b-8a11-cc2b3740aa3f&spaceId=83c75a39-3aba-4ba4-a792-7aefe4b07895&width=240&userId=&cache=v2">
+                    <p>카카오스토리</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
