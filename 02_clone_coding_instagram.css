@@ -1,8 +1,17 @@
 .screen {
-    margin: 0 auto;
-    max-width: 720px;
+    margin: 0;
 }
-.screen-header {
+#screen-body-section-pc {
+    background-color: #F6F6F6;
+}
+.screen-body-mobile {
+    margin: auto;
+
+}
+.screen-body-section {
+    max-width: 1000px;
+}
+#screen-header-items-mobile {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -12,17 +21,26 @@
 
     position: sticky;
     top: 0;
+
+    width: 100%;
+    max-width: 620px;
+
+    margin: auto;
 }
-.screen-header > img {
+#screen-header-items-mobile > img {
     margin: 2% 5%;
 }
 #insta-logo {
-    width: 28%;
+    width: 25%;
 }
+
 .screen-body {
     display: flex;
     flex-direction: column;
-    margin: 0;
+    margin: 0 auto;
+
+    width: 100%;
+    max-width: 620px;
 }
 .story {
     display: flex;
@@ -30,7 +48,7 @@
     justify-content: space-around;
     align-items: center;
 
-    background-color: #F6F6F6;
+    background-color: white;
 
     width: 100%;
 }
@@ -56,7 +74,7 @@
     border-radius: 70%;
 }
 .my-story > p {
-    font-size: 2vmin;
+    font-size: 12px;
     font-weight: bold;
 }
 .user1-story {
@@ -70,7 +88,7 @@
     margin: 2% 1%;
 }
 .user1-story > p {
-    font-size: 2vmin;
+    font-size: 12px;
     font-weight: bold;
 }
 #user1-img {
@@ -95,7 +113,7 @@
     margin: 2% 1%;
 }
 .user2-story > p {
-    font-size: 2vmin;
+    font-size: 12px;
     font-weight: bold;
 }
 #user2-img {
@@ -120,7 +138,7 @@
     margin: 2% 1%;
 }
 .user3-story > p {
-    font-size: 2vmin;
+    font-size: 12px;
     font-weight: bold;
 }
 #user3-img {
@@ -145,7 +163,7 @@
     margin: 2% 1%;
 }
 .user4-story > p {
-    font-size: 2vmin;
+    font-size: 12px;
     font-weight: bold;
 }
 #user4-img {
@@ -158,6 +176,9 @@
     width: 100%;
     height: 100%;
     border-radius: 70%;
+}
+.story-feed {
+    background-color: white;
 }
 .user-name-and-more {
     display: flex;
@@ -183,7 +204,7 @@
 .user-name > p {
     margin-left: 2%;
     font-weight: bold;
-    font-size: 2vmin;
+    font-size: 12px;
 }
 .user-img {
     max-width: 50px;
@@ -259,10 +280,10 @@
     width: 100%;
 }
 .comment > p {
-    font-size: 2vmin;
+    font-size: 12px;
 }
 .author {
-    margin: 0 2% 0 1%;
+    margin: 0 2% 0 1.5%;
     font-weight: bold;
 }
 .author-comment {
@@ -279,13 +300,16 @@
 }
 .screen-footer {
     width: 100%;
+    max-width: 620px;
 
     background-color: white;
 
     position: sticky;
     bottom: 0;
+
+    margin: 0 auto;
 }
-.icon-container {
+.footer-icon-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;

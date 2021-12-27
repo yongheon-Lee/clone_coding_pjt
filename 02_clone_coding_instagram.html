@@ -2,163 +2,309 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover">
     <title>인스타그램 클론코딩</title>
     <link rel="stylesheet" href="02_clone_coding_instagram.css">
+    <link rel="stylesheet" href="02_clone_coding_instagram_media_query.css">
 </head>
-<body>
-    <div class="screen">
-        <div class="screen-header">
+<body class="screen">
+    <div id="screen-header-mobile">
+        <div id="screen-header-items-mobile">
             <img src="insta_logo/camera@3x.png">
             <img id="insta-logo" src="insta_logo/insta-logo.png">
             <img src="insta_logo/dm@3x.png">
         </div>
-        <div class="screen-body">
-            <div class="story">
-                <div class="my-story">
-                    <div id="profile-img">
-                        <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
+    </div>
+    <div id="screen-header-pc">
+        <div id="screen-header-items-pc">
+            <div id="insta-logo-pc">
+                 <img src="insta_logo/insta-logo.png">
+            </div>
+            <div id="search-input-box">
+                <div id="search-input-box-border">
+                    <div id="search-img">
+                        <svg viewBox="0 0 24 24">
+                            <path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
+                        </svg>
                     </div>
-                    <p>내 스토리</p>
-                </div>
-                <div class="user1-story">
-                    <div id="user1-img">
-                        <img src="http://image14.hanatour.com/uploads/2018/11/LSH_5929_78184933.jpg">
-                    </div>
-                    <p>사막을 날뛰는 청년</p>
-                </div>
-                <div class="user2-story">
-                    <div id="user2-img">
-                        <img src="https://www.vinatimes.net/files/attach/images/339579/591/402/dad5ab8925bb55831c0c1c85c55158db.jpg">
-                    </div>
-                    <p>바다의 유랑자</p>
-                </div>
-                <div class="user3-story">
-                    <div id="user3-img">
-                        <img src="https://t1.daumcdn.net/cfile/blog/2640233657BFD2D61E">
-                    </div>
-                    <p>세렝게티의 방랑자</p>
-                </div>
-                <div class="user4-story">
-                    <div id="user4-img">
-                        <img src="https://www.sciencetimes.co.kr/wp-content/uploads/2015/10/11111.jpg">
-                    </div>
-                    <p>오로라 친구</p>
+                    <input id="search-input" type="text" placeholder="search"/>
                 </div>
             </div>
-            <div class="story-feed">
-                <div class="user-name-and-more">
-                    <div class="user-name">
-                        <div class="user-img">
-                            <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
-                        </div>
-                        <p>이용자</p>
-                    </div>
+            <div id="header-icon-container">
+                <div class="header-each-icon">
+                    <img src="insta_logo/home@3x.png">
+                </div>
+                <div class="header-each-icon">
+                    <img src="insta_logo/dm@3x.png">
+                </div>
+                <div class="header-each-icon">
+                    <img src="insta_logo/trending@3x.png">
+                </div>
+                <div class="header-each-icon">
+                    <img src="insta_logo/like@3x.png">
+                </div>
+                <div class="header-each-icon">
                     <img src="insta_logo/more@3x.png">
-                </div>
-                <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201904/18/5c4352a9-9f65-4584-a741-a418d1646b23.jpg">
-                <div class="function-button">
-                    <div class="active-function">
-                        <img src="insta_logo/like@3x.png">
-                        <img src="insta_logo/comment@3x.png">
-                        <img src="insta_logo/dm@3x.png">
-                    </div>
-                    <img src="insta_logo/favorite@3x.png">
-                </div>
-                <div class="check-like">
-                    <div class="user-img-who-liked-feed">
-                        <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
-                    </div>
-                    <p><strong>이용자</strong>님 <strong>외 10,000명</strong>이 좋아합니다</p>
-                </div>
-                <div class="comment-and-feed-time">
-                    <div class="comment">
-                        <p class="author">이용자</p>
-                        <p class="author-comment">안녕하세요</p>
-                    </div>
-                    <div class="feed-time">
-                        <p>6시간 전</p>
-                    </div>
-                </div>
-            </div>
-            <div class="story-feed">
-                <div class="user-name-and-more">
-                    <div class="user-name">
-                        <div class="user-img">
-                            <img src="https://t1.daumcdn.net/cfile/tistory/2438573358070C1535">
-                        </div>
-                        <p>photoholic</p>
-                    </div>
-                    <img src="insta_logo/more@3x.png">
-                </div>
-                <img src="https://t1.daumcdn.net/cfile/tistory/9906804C5FB7337315">
-                <div class="function-button">
-                    <div class="active-function">
-                        <img src="insta_logo/like@3x.png">
-                        <img src="insta_logo/comment@3x.png">
-                        <img src="insta_logo/dm@3x.png">
-                    </div>
-                    <img src="insta_logo/favorite@3x.png">
-                </div>
-                <div class="check-like">
-                    <div class="user-img-who-liked-feed">
-                        <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
-                    </div>
-                    <p><strong>이용자</strong>님 <strong>외 3,542명</strong>이 좋아합니다</p>
-                </div>
-                <div class="comment-and-feed-time">
-                    <div class="comment">
-                        <p class="author">이용자</p>
-                        <p class="author-comment">경회루 사진 너무 잘 찍었어요!!</p>
-                    </div>
-                    <div class="feed-time">
-                        <p>1일 전</p>
-                    </div>
-                </div>
-            </div>
-            <div class="story-feed">
-                <div class="user-name-and-more">
-                    <div class="user-name">
-                        <div class="user-img">
-                            <img src="https://t1.daumcdn.net/cfile/tistory/9946A4505F5817A60D">
-                        </div>
-                        <p>drone_lover</p>
-                    </div>
-                    <img src="insta_logo/more@3x.png">
-                </div>
-                <img src="https://cdn.crowdpic.net/detail-thumb/thumb_d_729656429DDBB2E9510263C1DC786B83.jpg">
-                <div class="function-button">
-                    <div class="active-function">
-                        <img src="insta_logo/like@3x.png">
-                        <img src="insta_logo/comment@3x.png">
-                        <img src="insta_logo/dm@3x.png">
-                    </div>
-                    <img src="insta_logo/favorite@3x.png">
-                </div>
-                <div class="check-like">
-                    <div class="user-img-who-liked-feed">
-                        <img src="https://img.hankyung.com/photo/202110/01.27668652.1.jpg">
-                    </div>
-                    <p><strong>logi</strong>님 <strong>외 6,487명</strong>이 좋아합니다</p>
-                </div>
-                <div class="comment-and-feed-time">
-                    <div class="comment">
-                        <p class="author">maple</p>
-                        <p class="author-comment">what a marvelous sky picture!</p>
-                    </div>
-                    <div class="feed-time">
-                        <p>2일 전</p>
-                    </div>
                 </div>
             </div>
         </div>
-        <div class="screen-footer">
-            <div class="icon-container">
-                <img src="insta_logo/home@3x.png">
-                <img src="insta_logo/search@3x.png">
-                <img src="insta_logo/trending@3x.png">
-                <img src="insta_logo/like@3x.png">
-                <img src="insta_logo/home@3x.png">
+    </div>
+    <div id="screen-body-section-pc">
+        <div class="screen-body-mobile">
+            <div class="screen-body-section">
+                <div class="screen-body">
+                    <div class="story">
+                        <div class="my-story">
+                            <div id="profile-img">
+                                <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
+                            </div>
+                            <p>내 스토리</p>
+                        </div>
+                        <div class="user1-story">
+                            <div id="user1-img">
+                                <img src="http://image14.hanatour.com/uploads/2018/11/LSH_5929_78184933.jpg">
+                            </div>
+                            <p>사막을 날뛰는 청년</p>
+                        </div>
+                        <div class="user2-story">
+                            <div id="user2-img">
+                                <img src="https://www.vinatimes.net/files/attach/images/339579/591/402/dad5ab8925bb55831c0c1c85c55158db.jpg">
+                            </div>
+                            <p>바다의 유랑자</p>
+                        </div>
+                        <div class="user3-story">
+                            <div id="user3-img">
+                                <img src="https://t1.daumcdn.net/cfile/blog/2640233657BFD2D61E">
+                            </div>
+                            <p>세렝게티의 방랑자</p>
+                        </div>
+                        <div class="user4-story">
+                            <div id="user4-img">
+                                <img src="https://www.sciencetimes.co.kr/wp-content/uploads/2015/10/11111.jpg">
+                            </div>
+                            <p>오로라 친구</p>
+                        </div>
+                    </div>
+                    <div class="story-feed">
+                        <div class="user-name-and-more">
+                            <div class="user-name">
+                                <div class="user-img">
+                                    <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
+                                </div>
+                                <p>이용자</p>
+                            </div>
+                            <img src="insta_logo/more@3x.png">
+                        </div>
+                        <img src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/201904/18/5c4352a9-9f65-4584-a741-a418d1646b23.jpg">
+                        <div class="function-button">
+                            <div class="active-function">
+                                <img src="insta_logo/like@3x.png">
+                                <img src="insta_logo/comment@3x.png">
+                                <img src="insta_logo/dm@3x.png">
+                            </div>
+                            <img src="insta_logo/favorite@3x.png">
+                        </div>
+                        <div class="check-like">
+                            <div class="user-img-who-liked-feed">
+                                <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
+                            </div>
+                            <p><strong>이용자</strong>님 <strong>외 10,000명</strong>이 좋아합니다</p>
+                        </div>
+                        <div class="comment-and-feed-time">
+                            <div class="comment">
+                                <p class="author">이용자</p>
+                                <p class="author-comment">안녕하세요</p>
+                            </div>
+                            <div class="feed-time">
+                                <p>6시간 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-feed">
+                        <div class="user-name-and-more">
+                            <div class="user-name">
+                                <div class="user-img">
+                                    <img src="https://t1.daumcdn.net/cfile/tistory/2438573358070C1535">
+                                </div>
+                                <p>photoholic</p>
+                            </div>
+                            <img src="insta_logo/more@3x.png">
+                        </div>
+                        <img src="https://t1.daumcdn.net/cfile/tistory/9906804C5FB7337315">
+                        <div class="function-button">
+                            <div class="active-function">
+                                <img src="insta_logo/like@3x.png">
+                                <img src="insta_logo/comment@3x.png">
+                                <img src="insta_logo/dm@3x.png">
+                            </div>
+                            <img src="insta_logo/favorite@3x.png">
+                        </div>
+                        <div class="check-like">
+                            <div class="user-img-who-liked-feed">
+                                <img src="https://img.animalplanet.co.kr/news/2019/10/31/700/t9zk11lw0kawulsf3545.jpg">
+                            </div>
+                            <p><strong>이용자</strong>님 <strong>외 3,542명</strong>이 좋아합니다</p>
+                        </div>
+                        <div class="comment-and-feed-time">
+                            <div class="comment">
+                                <p class="author">이용자</p>
+                                <p class="author-comment">경회루 사진 너무 잘 찍었어요!!</p>
+                            </div>
+                            <div class="feed-time">
+                                <p>1일 전</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-feed">
+                        <div class="user-name-and-more">
+                            <div class="user-name">
+                                <div class="user-img">
+                                    <img src="https://t1.daumcdn.net/cfile/tistory/9946A4505F5817A60D">
+                                </div>
+                                <p>drone_lover</p>
+                            </div>
+                            <img src="insta_logo/more@3x.png">
+                        </div>
+                        <img src="https://cdn.crowdpic.net/detail-thumb/thumb_d_729656429DDBB2E9510263C1DC786B83.jpg">
+                        <div class="function-button">
+                            <div class="active-function">
+                                <img src="insta_logo/like@3x.png">
+                                <img src="insta_logo/comment@3x.png">
+                                <img src="insta_logo/dm@3x.png">
+                            </div>
+                            <img src="insta_logo/favorite@3x.png">
+                        </div>
+                        <div class="check-like">
+                            <div class="user-img-who-liked-feed">
+                                <img src="https://img.hankyung.com/photo/202110/01.27668652.1.jpg">
+                            </div>
+                            <p><strong>logi</strong>님 <strong>외 6,487명</strong>이 좋아합니다</p>
+                        </div>
+                        <div class="comment-and-feed-time">
+                            <div class="comment">
+                                <p class="author">maple</p>
+                                <p class="author-comment">what a marvelous sky picture!</p>
+                            </div>
+                            <div class="feed-time">
+                                <p>2일 전</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="suggest-section">
+                    <div class="suggest-user-box">
+                        <div class="suggest-title">
+                            <div id="suggest-for-user">
+                                <p>회원님을 위한 추천</p>
+                            </div>
+                            <div id="show-suggests">
+                                <p><b>모두 보기</b></p>
+                            </div>
+                        </div>
+                        <div class="suggest-user-list">
+                            <div class="suggest-user">
+                                <div class="suggest-user-profile-box">
+                                    <div class="suggest-user-profile-img-box">
+                                        <img src="https://t1.daumcdn.net/cfile/tistory/9946A4505F5817A60D">
+                                    </div>
+                                    <div class="suggest-user-profile-info-box">
+                                        <div class="suggest-user-name">
+                                            <p>drone_lover</p>
+                                        </div>
+                                        <div class="suggest-user-yes-follow">
+                                            <p>drone_lover님이 팔로우합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="suggest-user-follow-btn">
+                                    <button>팔로우</button>
+                                </div>
+                            </div>
+                            <div class="suggest-user">
+                                <div class="suggest-user-profile-box">
+                                    <div class="suggest-user-profile-img-box">
+                                        <img src="https://t1.daumcdn.net/cfile/tistory/2438573358070C1535">
+                                    </div>
+                                    <div class="suggest-user-profile-info-box">
+                                        <div class="suggest-user-name">
+                                            <p>photoholic</p>
+                                        </div>
+                                        <div class="suggest-user-yes-follow">
+                                            <p>photoholic님이 팔로우합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="suggest-user-follow-btn">
+                                    <button>팔로우</button>
+                                </div>
+                            </div>
+                            <div class="suggest-user">
+                                <div class="suggest-user-profile-box">
+                                    <div class="suggest-user-profile-img-box">
+                                        <img src="https://img.hankyung.com/photo/202110/01.27668652.1.jpg">
+                                    </div>
+                                    <div class="suggest-user-profile-info-box">
+                                        <div class="suggest-user-name">
+                                            <p>logi</p>
+                                        </div>
+                                        <div class="suggest-user-yes-follow">
+                                            <p>logi님이 팔로우합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="suggest-user-follow-btn">
+                                    <button>팔로우</button>
+                                </div>
+                            </div>
+                            <div class="suggest-user">
+                                <div class="suggest-user-profile-box">
+                                    <div class="suggest-user-profile-img-box">
+                                        <img src="http://t1.daumcdn.net/cfile/146EBF10B13C23D2E8">
+                                    </div>
+                                    <div class="suggest-user-profile-info-box">
+                                        <div class="suggest-user-name">
+                                            <p>smith</p>
+                                        </div>
+                                        <div class="suggest-user-yes-follow">
+                                            <p>smith님이 팔로우합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="suggest-user-follow-btn">
+                                    <button>팔로우</button>
+                                </div>
+                            </div>
+                            <div class="suggest-user">
+                                <div class="suggest-user-profile-box">
+                                    <div class="suggest-user-profile-img-box">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJhCyfhfQYBqJI3eXMm5KeMEqCdF2IKNAE-xxvvIHnNhhS1lPpyzo02iT1FoWab3iCuQ&usqp=CAU">
+                                    </div>
+                                    <div class="suggest-user-profile-info-box">
+                                        <div class="suggest-user-name">
+                                            <p>amanda</p>
+                                        </div>
+                                        <div class="suggest-user-yes-follow">
+                                            <p>amanda님이 팔로우합니다.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="suggest-user-follow-btn">
+                                    <button>팔로우</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="screen-footer">
+                <div class="footer-icon-container">
+                    <img src="insta_logo/home@3x.png">
+                    <img src="insta_logo/search@3x.png">
+                    <img src="insta_logo/trending@3x.png">
+                    <img src="insta_logo/like@3x.png">
+                    <img src="insta_logo/home@3x.png">
+                </div>
             </div>
         </div>
     </div>
